@@ -8,69 +8,168 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <div class="pixel-cursor"></div>
+    <div class="parallax-background"></div>
+    
     <header>
         <nav>
-            <div class="logo">Slingshot Squires</div>
+            <div class="logo">
+                <img src="assets/logo.png" alt="Slingshot Squires Logo" class="logo-img">
+                <span>Slingshot Squires</span>
+            </div>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#gameplay">Gameplay</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#how-to-play">How to Play</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="#gameplay"><i class="fas fa-gamepad"></i> Gameplay</a></li>
+                <li><a href="#characters"><i class="fas fa-users"></i> Characters</a></li>
+                <li><a href="#team"><i class="fas fa-user-friends"></i> Team</a></li>
+                <li><a href="#how-to-play"><i class="fas fa-book"></i> How to Play</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="hero">
         <div class="hero-content">
-            <h1>Slingshot Squires</h1>
+            <h1 class="pixel-text">Slingshot Squires</h1>
             <p class="tagline">Defend your farm with strategic slingshot action!</p>
-            <button class="cta-button">Watch Trailer</button>
+            <div class="hero-buttons">
+                <button class="cta-button pixel-button">
+                    <i class="fas fa-play"></i> Watch Trailer
+                </button>
+                <button class="cta-button pixel-button">
+                    <i class="fas fa-download"></i> Download Demo
+                </button>
+            </div>
+        </div>
+        <div class="hero-decoration">
+            <div class="pixel-cloud"></div>
+            <div class="pixel-sun"></div>
         </div>
     </section>
 
     <section id="about">
-        <h2>About the Game</h2>
+        <h2 class="section-title">About the Game</h2>
         <div class="about-content">
-            <p>Slingshot Squires combines the strategic tower defense of Plants vs. Zombies with the physics-based action of Angry Birds, all set in a charming pixel-art world inspired by Stardew Valley. Defend your farm from waves of mischievous creatures using your trusty slingshot and strategic placement of defensive structures.</p>
+            <div class="about-text">
+                <p>Slingshot Squires combines the strategic tower defense of Plants vs. Zombies with the physics-based action of Angry Birds, all set in a charming pixel-art world inspired by Stardew Valley.</p>
+                <div class="game-features">
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Strategic Defense</h3>
+                        <p>Place and upgrade defensive structures to protect your farm</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>Precise Combat</h3>
+                        <p>Master the physics-based slingshot mechanics</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-seedling"></i>
+                        <h3>Farm Life</h3>
+                        <p>Grow crops and raise animals between battles</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="pixel-farm"></div>
+            </div>
         </div>
     </section>
 
     <section id="gameplay">
-        <h2>Gameplay</h2>
+        <h2 class="section-title">Gameplay</h2>
         <div class="gameplay-gallery">
-            <!-- Screenshots will be added here -->
-            <div class="screenshot-placeholder">Screenshot 1</div>
-            <div class="screenshot-placeholder">Screenshot 2</div>
-            <div class="screenshot-placeholder">Screenshot 3</div>
+            <div class="screenshot-container">
+                <img src="assets/screenshot1.png" alt="Gameplay Screenshot 1" class="screenshot">
+                <div class="screenshot-overlay">
+                    <h3>Strategic Defense</h3>
+                    <p>Place your defenses wisely</p>
+                </div>
+            </div>
+            <div class="screenshot-container">
+                <img src="assets/screenshot2.png" alt="Gameplay Screenshot 2" class="screenshot">
+                <div class="screenshot-overlay">
+                    <h3>Combat</h3>
+                    <p>Master the slingshot</p>
+                </div>
+            </div>
+            <div class="screenshot-container">
+                <img src="assets/screenshot3.png" alt="Gameplay Screenshot 3" class="screenshot">
+                <div class="screenshot-overlay">
+                    <h3>Farming</h3>
+                    <p>Grow your resources</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="characters">
+        <h2 class="section-title">Characters</h2>
+        <div class="characters-grid">
+            <div class="character-card">
+                <div class="character-image">
+                    <img src="assets/character1.png" alt="Farmer Character">
+                </div>
+                <h3>The Farmer</h3>
+                <p>Your main character, skilled in both farming and combat</p>
+            </div>
+            <div class="character-card">
+                <div class="character-image">
+                    <img src="assets/character2.png" alt="Blacksmith Character">
+                </div>
+                <h3>The Blacksmith</h3>
+                <p>Upgrades your weapons and defensive structures</p>
+            </div>
+            <div class="character-card">
+                <div class="character-image">
+                    <img src="assets/character3.png" alt="Wizard Character">
+                </div>
+                <h3>The Wizard</h3>
+                <p>Provides magical enhancements and special abilities</p>
+            </div>
         </div>
     </section>
 
     <section id="team">
-        <h2>Meet the Team</h2>
+        <h2 class="section-title">Meet the Team</h2>
         <div class="team-grid">
-            <!-- Team member cards will be added here -->
             <div class="team-member">
-                <div class="member-image"></div>
+                <div class="member-image">
+                    <img src="assets/team1.png" alt="Team Member 1">
+                </div>
                 <h3>Team Member</h3>
                 <p>Role</p>
+                <div class="member-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="how-to-play">
-        <h2>How to Play</h2>
+        <h2 class="section-title">How to Play</h2>
         <div class="instructions">
             <div class="instruction-card">
+                <div class="instruction-icon">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
                 <h3>1. Place Your Defenses</h3>
                 <p>Strategically position your defensive structures to protect your farm.</p>
             </div>
             <div class="instruction-card">
+                <div class="instruction-icon">
+                    <i class="fas fa-crosshairs"></i>
+                </div>
                 <h3>2. Aim and Fire</h3>
                 <p>Use your slingshot to take down enemies with precise shots.</p>
             </div>
             <div class="instruction-card">
+                <div class="instruction-icon">
+                    <i class="fas fa-level-up-alt"></i>
+                </div>
                 <h3>3. Upgrade and Progress</h3>
                 <p>Earn resources to upgrade your defenses and unlock new abilities.</p>
             </div>
@@ -79,12 +178,17 @@
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2024 Slingshot Squires. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#">Twitter</a>
-                <a href="#">Discord</a>
-                <a href="#">Instagram</a>
+            <div class="footer-logo">
+                <img src="assets/logo.png" alt="Slingshot Squires Logo">
+                <p>Slingshot Squires</p>
             </div>
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="copyright">&copy; 2024 Slingshot Squires. All rights reserved.</p>
         </div>
     </footer>
 
