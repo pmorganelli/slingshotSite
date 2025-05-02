@@ -1,57 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slingshot Squires</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slingshot Squires</title>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 </head>
 <body>
-    <div class="pixel-cursor"></div>
-    <div class="parallax-background"></div>
-    
-    <header>
-        <nav>
-            <div class="logo">
-                <!-- <img src="" alt="Slingshot Squires Logo" class="logo-img"> -->
-                <span>Slingshot Squires</span>
-            </div>
-            <ul>
-                <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
-                <li><a href="#gameplay"><i class="fas fa-gamepad"></i> Gameplay</a></li>
-                <li><a href="#characters"><i class="fas fa-users"></i> Characters</a></li>
-                <li><a href="#team"><i class="fas fa-user-friends"></i> Team</a></li>
-                <li><a href="#how-to-play"><i class="fas fa-book"></i> How to Play</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="pixel-cursor"></div>
+  <div class="parallax-background"></div>
 
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Slingshot Squires</h1>
-            <h1 class="demo-section"></h1>
-            <p class="tagline">Defend your farm with strategic slingshot action!</p>
-            <div class="hero-buttons">
-                <button class="cta-button pixel-button">
-                    <i class="fas fa-play"></i> Watch Trailer
-                </button>
-                <a href="https://slingshotsquires.itch.io/slingshot-squires" target="_blank" rel="noopener noreferrer">
-                    <button class="cta-button pixel-button">
-                      <i class="fas fa-download"></i> Play Demo
-                    </button>
-                  </a>
-                  
-            </div>
+  <header>
+    <nav>
+      <div class="logo">
+        <span>Slingshot Squires</span>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
         </div>
-        <div class="hero-decoration">
-            <div class="pixel-cloud"></div>
-            <div class="pixel-sun"></div>
-        </div>
-    </section>
+      </div>
+      <ul id="nav-links">
+        <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+        <li><a href="#gameplay"><i class="fas fa-gamepad"></i> Gameplay</a></li>
+        <li><a href="#characters"><i class="fas fa-users"></i> Characters</a></li>
+        <li><a href="#team"><i class="fas fa-user-friends"></i> Team</a></li>
+        <li><a href="#how-to-play"><i class="fas fa-book"></i> How to Play</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Slingshot Squires</h1>
+      <div class="demo-section"></div>
+      <p class="tagline">Defend your farm with strategic slingshot action!</p>
+      <div class="hero-buttons">
+        <button class="cta-button pixel-button" id="watch-trailer">
+          <i class="fas fa-play"></i> Watch Trailer
+        </button>
+        <a href="https://slingshotsquires.itch.io/slingshot-squires" target="_blank" rel="noopener noreferrer">
+          <button class="cta-button pixel-button">
+            <i class="fas fa-download"></i> Play Demo
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="hero-decoration">
+      <div class="pixel-cloud"></div>
+      <div class="pixel-sun"></div>
+    </div>
+  </section>
+
+  <!-- <div id="trailer-modal" class="modal hidden">
+    <div class="modal-backdrop">
+      <div class="modal-content">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        <button class="close-btn">X</button>
+      </div>
+    </div>
+  </div> -->
 
     <section id="about">
         <h2 class="section-title">About the Game</h2>
@@ -259,18 +271,15 @@
 
     <footer>
         <div class="footer-content">
-            <div class="footer-logo">
-                <!-- <img src="assets/logo.png" alt="Slingshot Squires Logo"> -->
-                <p>Slingshot Squires</p>
-            </div>
-            <div class="footer-links">
-                <a href="https://github.com/pmorganelli/slingshot-squires"><i class="fab fa-github"></i></a>
-            </div>
-            <p class="copyright">&copy; 2024 Slingshot Squires. All rights reserved.</p> 
-            <p class="copyright">Made for Tufts CS23: Game Design as a Final Project</p>
+          <p>Slingshot Squires</p>
+          <div class="footer-links">
+            <a href="https://github.com/pmorganelli/slingshot-squires"><i class="fab fa-github"></i></a>
+          </div>
+          <p>&copy; 2024 Slingshot Squires. All rights reserved.</p>
+          <p>Made for Tufts CS23: Game Design as a Final Project</p>
         </div>
-    </footer>
-
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html> 
