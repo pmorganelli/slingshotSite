@@ -210,8 +210,21 @@ section {
     transform: translateY(0);
 }
 
+.demo-section {
+    background-image: url('assets/gameplay0.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* or 100vh for full screen height */
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+
 .about-content {
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     background-color: var(--card-background);
