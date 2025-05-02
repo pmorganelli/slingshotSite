@@ -233,6 +233,10 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.about-text {
+    font-size: x-large;
+}
+
 .game-features {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -477,13 +481,21 @@ footer {
         font-size: 2rem;
     }
 
-    .tagline {
-        font-size: 1.2rem;
-    }
-
     .hero-buttons {
         flex-direction: column;
     }
+}
+
+.demo-text {
+    font-size: x-large;
+}
+
+.character-text {
+    font-size: x-large;
+}
+
+.bio-text {
+    font-size: larger;
 }
 
 /* === Hamburger Menu === */
