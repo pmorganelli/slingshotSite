@@ -137,6 +137,7 @@ section {
 }
 
 .hero-content {
+    padding-top: 15rem;
     position: relative;
     z-index: 2;
 }
